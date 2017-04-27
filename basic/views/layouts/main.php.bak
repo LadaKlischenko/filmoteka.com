@@ -1,0 +1,129 @@
+<?php
+
+/* @var $this \yii\web\View */
+/* @var $content string */
+
+use yii\helpers\Html;
+use yii\bootstrap\Nav;
+use yii\bootstrap\NavBar;
+use yii\widgets\Breadcrumbs;
+use app\assets\AppAsset;
+
+
+
+AppAsset::register($this);
+
+$action = Yii::$app->controller->action->id;
+
+?>
+<?php $this->beginPage() ?>
+<!DOCTYPE html>
+<html lang="<?= Yii::$app->language ?>">
+
+
+
+<head>
+    
+
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+            <meta name="description" content="Web Page is used to find all nessasery info about films" />
+            <meta name="keywords" content="Films, actors, directors, genres, filmoteka" />
+            <meta name="viewport" content="width=device-width; initial-scale=1" />
+                <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+                <link type="text/css" rel="stylesheet" href="/web/css/main.css" />
+            <link type="text/css" rel="stylesheet" href="/styles/fancybox.css" />
+                <script type="text/javascript" src="/web/js/jquery.js"></script>
+            <script type="text/javascript" src="/web/js/is_mobile.js"></script>
+            <script type="text/javascript" src="//vk.com/js/api/openapi.js?121"></script>
+            <script type="text/javascript" src="/web/js/fancybox.js"></script>
+            <script type="text/javascript" src="/web/js/functions.js"></script>
+
+
+    <meta charset="<?= Yii::$app->charset ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <?= Html::csrfMetaTags() ?>
+    <title><?= Html::encode($this->title) ?></title>
+    <?php $this->head() ?>
+</head>
+<body>
+<?php $this->beginBody() ?>
+
+<div id="header">
+        <ul class="menu">
+    <li>
+        <a href="<?=Yii::$app->urlManager->createUrl(["site/about"])?>" <?php if ($action == "index") { ?>class = "active" <?php } ?> >About us</a>
+    </li>
+    <li>
+        <a href="<?=Yii::$app->urlManager->createUrl(["site/contact"])?>" <?php if ($action == "contact") { ?>class = "active" <?php } ?>>contact</a>
+    </li>
+    <li>
+        <a href="<?=Yii::$app->urlManager->createUrl(["site/login"])?>" <?php if ($action == "login") { ?>class = "active" <?php } ?>>login</a>
+    </li>
+    <li>
+        <a href="<?=Yii::$app->urlManager->createUrl(["site/error"])?>" <?php if ($action == "error") { ?>class = "active" <?php } ?>>error</a>
+    </li>
+    <li>
+        <a target="_blank" href="<?=Yii::$app->urlManager->createUrl(["site/index"])?>" <?php if ($action == "index") { ?>class = "active" <?php } ?>>Мой сайт</a>
+    </li>
+</ul>       <div class="clear"></div>
+        <div id="header_title">
+            <h2><a href="/">Filmoteka</a></h2>
+        </div>
+        <div id="search">
+            <form name="search" method="get" action="/search.html">
+                <div>
+                    <input type="text" name="q" placeholder="Search" />
+                    <input type="image" src="/web/images/search_icon.png" alt="Search" />
+                </div>
+            </form>
+        </div>
+        
+    </div>
+
+
+    <table id="content">
+      <tr>
+          <td id="left">
+            <?=$content?>
+            </td>
+            <
+
+   
+        
+    <footer>
+        <p>
+            <img src="/web/images/logo_footer.png" alt="" />
+        </p>
+        <p>
+            <img src="/web/images/logo_arrow.png" alt="" />
+            <a href="/"><span>блог Михаила Русакова</span></a>
+        </p>
+        <ul class="menu">
+    <li>
+        <a href="/author.html">Об авторе</a>
+    </li>
+    <li>
+        <a href="/courses.html">Видеокурсы</a>
+    </li>
+    <li>
+        <a href="/reviews.html">Отзывы</a>
+    </li>
+    <li>
+        <a href="/subscribe.html">Выпуски рассылки</a>
+    </li>
+    <li>
+        <a target="_blank" href="https://myrusakov.ru">Мой сайт</a>
+    </li>
+    <li>
+        <a href="/sites.html">Сайты учеников</a>
+    </li>
+</ul>       <div class="clear"></div>
+        <div id="copy">
+            <p>&copy; by Klischenko Ladyslava 2017</p>
+            
+        </div>
+    </footer>
+
+</body>
+</html>
+<?php $this->endPage() ?>

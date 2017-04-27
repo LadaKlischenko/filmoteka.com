@@ -1,0 +1,121 @@
+2017-04-26 11:01:27 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "".' in C:\OpenServer\domains\filmoteka.com\basic\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\OpenServer\domains\filmoteka.com\basic\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('', Array)
+#1 C:\OpenServer\domains\filmoteka.com\basic\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OpenServer\domains\filmoteka.com\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\OpenServer\domains\filmoteka.com\basic\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\OpenServer\domains\filmoteka.com\basic\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OpenServer\domains\filmoteka.com\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-04-26 11:01:27 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1953d5982218989bce01fd70b7352bd8d73fc2b4776bbc89cca34f8fd7dccdc1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"CjVhoxb2UFotsWcQr6KawQhxaQ73I-ab\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'filmoteka.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1953d5982218989bce01fd70b7352bd8d73fc2b4776bbc89cca34f8fd7dccdc1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22CjVhoxb2UFotsWcQr6KawQhxaQ73I-ab%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.5\\ext;c:\\openserver\\modules\\php\\PHP-5.5\\pear;c:\\openserver\\modules\\php\\PHP-5.5\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.5;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.4\\bin;c:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'filmoteka.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/filmoteka.com'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/filmoteka.com'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/filmoteka.com/index.php'
+    'REMOTE_PORT' => '2492'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1493193687.54
+    'REQUEST_TIME' => 1493193687
+    'argv' => []
+    'argc' => 0
+]
+2017-04-26 11:01:27 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception (Invalid Configuration) 'yii\base\InvalidConfigException' with message 'The directory does not exist: C:/OpenServer/domains/filmoteka.com/assets' 
+
+in C:\OpenServer\domains\filmoteka.com\basic\vendor\yiisoft\yii2\web\AssetManager.php:213
+
+Stack trace:
+#0 C:\OpenServer\domains\filmoteka.com\basic\vendor\yiisoft\yii2\base\Object.php(107): yii\web\AssetManager->init()
+#1 [internal function]: yii\base\Object->__construct(Array)
+#2 C:\OpenServer\domains\filmoteka.com\basic\vendor\yiisoft\yii2\di\Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#3 C:\OpenServer\domains\filmoteka.com\basic\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\web\\AssetMa...', Array, Array)
+#4 C:\OpenServer\domains\filmoteka.com\basic\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\web\\AssetMa...', Array, Array)
+#5 C:\OpenServer\domains\filmoteka.com\basic\vendor\yiisoft\yii2\di\ServiceLocator.php(135): yii\BaseYii::createObject(Array)
+#6 C:\OpenServer\domains\filmoteka.com\basic\vendor\yiisoft\yii2\base\Application.php(605): yii\di\ServiceLocator->get('assetManager')
+#7 C:\OpenServer\domains\filmoteka.com\basic\vendor\yiisoft\yii2\web\View.php(225): yii\base\Application->getAssetManager()
+#8 C:\OpenServer\domains\filmoteka.com\basic\vendor\yiisoft\yii2\base\Component.php(132): yii\web\View->getAssetManager()
+#9 C:\OpenServer\domains\filmoteka.com\basic\vendor\yiisoft\yii2-debug\panels\AssetPanel.php(53): yii\base\Component->__get('assetManager')
+#10 C:\OpenServer\domains\filmoteka.com\basic\vendor\yiisoft\yii2-debug\LogTarget.php(54): yii\debug\panels\AssetPanel->save()
+#11 C:\OpenServer\domains\filmoteka.com\basic\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#12 C:\OpenServer\domains\filmoteka.com\basic\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#13 C:\OpenServer\domains\filmoteka.com\basic\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#14 [internal function]: yii\log\Logger->flush(true)
+#15 {main}
+2017-04-26 11:01:27 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1953d5982218989bce01fd70b7352bd8d73fc2b4776bbc89cca34f8fd7dccdc1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"CjVhoxb2UFotsWcQr6KawQhxaQ73I-ab\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'filmoteka.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1953d5982218989bce01fd70b7352bd8d73fc2b4776bbc89cca34f8fd7dccdc1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22CjVhoxb2UFotsWcQr6KawQhxaQ73I-ab%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.5\\ext;c:\\openserver\\modules\\php\\PHP-5.5\\pear;c:\\openserver\\modules\\php\\PHP-5.5\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.5;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.4\\bin;c:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'filmoteka.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/filmoteka.com'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/filmoteka.com'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/filmoteka.com/index.php'
+    'REMOTE_PORT' => '2492'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1493193687.54
+    'REQUEST_TIME' => 1493193687
+    'argv' => []
+    'argc' => 0
+]

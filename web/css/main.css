@@ -1,0 +1,32 @@
+.pagination {
+	float: right;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.pagination li {
+list-style: none;
+float:left;
+margin: 0 auto;
+	}
+.pagination table {
+	font-size: 80%;
+	margin: 0 auto;
+}
+
+.pagination a {
+	color: #5f88a3;
+	text-decoration: none;
+}
+.pagination a:hover {
+
+	color: #47509d;
+}
+
+#pages {
+font-size: 80%;
+width:550px;
+margin: 0 auto;
+}
+
